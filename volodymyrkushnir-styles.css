@@ -593,16 +593,16 @@
     color: dimgrey;
   }
   .contacts li a.mail:hover {
-    color: dimgrey;
+    color: rgb(7, 192, 183);
   }
   .contacts li a.skype:hover {
-    color: #00aff0;
+    color: #1c99c7;
   }
   .contacts li a.telegram:hover {
     color: #0088cc;
   }
   .contacts li a.phone:hover {
-    color: dimgrey;
+    color: rgb(182, 3, 3);
   }
   .contacts li a.website {
     display: none;
