@@ -9,7 +9,6 @@
 }
 .bsa-link:hover {
     text-decoration: none;
-    transition: none !important;
 }
 .bsa-link:hover :first-child {
     border-bottom: 2px solid #6fc0dd;
