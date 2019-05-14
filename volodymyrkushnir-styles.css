@@ -512,6 +512,9 @@
     flex: 1 0 auto;
     width: 130%;
     margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 7px 4px gray;
+    
   }
   @media only screen and (max-width: 1199px) {
     .avatar-wrapper {
