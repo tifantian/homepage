@@ -1,5 +1,3 @@
-
-
 var elementLight = document.querySelector(".elementLight"); 
 elementLight.addEventListener("click", function() {
     elementLight.classList.add('spotlight');
