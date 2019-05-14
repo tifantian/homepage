@@ -48,7 +48,7 @@
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">Бурмелёв Кирилл</h1>
-                    <div class="job">Студент</div>
+                    <div class="job"></div>
                     <ul class="contacts">
                       <li>
                         <a href="tg:tifantian" rel="author" class="telegram">
@@ -323,6 +323,41 @@
     <footer>
       <p><strong><a id="bsa-footer" href="https://study.binary-studio.com" target="_blank" rel="external"><span class="footer-bsa">Binary</span> <span class="footer-bsa">Stidio</span> <span class="footer-bsa">Academy</span></a></strong></p>
     </footer>
-    <!-- <script> -->
+    <script type="text/javascript">
+      var job = document.getElementsByClassName('job')[0],
+          now = new Date(),
+          bachelor = new Date(2019, 5, 16),
+          birth = new Date(1998, 3, 4);
+      var diffBachelor = Math.floor((bachelor - now)/(1000 * 60 * 60 * 24)),
+          diffBirth = Math.floor((now - birth)/(1000 * 60 * 60 * 24));
+      var dayForStudent = getDayName(diffBachelor),
+          dayForBirth = getDayName(diffBirth),
+          result = '';
+      result += `Живу уже ${diffBirth} ${dayForBirth}` + '<br>';
+      if(dayForStudent) {
+        result += `Студент КПИ ещё ${diffBachelor} ${dayForStudent}`
+      } else {
+        result += `Поступаю в Binary Studio Academy`;
+      }
+      function getDayName(remaning) {
+        if(remaning > 0) {
+          var dayName;
+          if(remaning > 4 && remaning < 21) {
+            dayName = 'дней';
+          } else if(remaning == 2 || remaning == 3 || remaning == 4) {
+            dayName = 'дня';
+          } else if(remaning == 1 || (remaning - 1) % 10 == 0) {
+            dayName = 'день';
+          } else if(remaning % 10 == 2 || remaning % 10==3 || remaning % 10==4) {
+            dayName = 'дня';
+          } else {
+            dayName = 'дней';
+          }
+          return dayName;
+        }
+        return 0;
+      }
+      job.innerHTML = result;
+    </script> 
   </body>
 </html>
