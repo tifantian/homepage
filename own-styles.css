@@ -1,0 +1,25 @@
+footer .footer-bsa:first-child {
+    color: #ec1848;
+    
+}
+footer .footer-bsa:nth-child(2) {
+    color: #ffc712;
+}
+footer .footer-bsa:last-child {
+    color: #00adee;
+}
+footer #bsa-footer:hover {
+    text-decoration: none;
+}
+footer #bsa-footer:hover :first-child {
+    border-bottom: 2px solid #6fc0dd;
+    border-top: 2px solid #6fc0dd;
+}
+footer #bsa-footer:hover :nth-child(2) {
+    border-bottom: 2px solid #ec5f80;
+    border-top: 2px solid #ec5f80;
+}
+footer #bsa-footer:hover :last-child {
+    border-bottom: 2px solid #ebca60;
+    border-top: 2px solid #ebca60;
+} 
