@@ -26,3 +26,6 @@
 main:nth-last-child(2){
     margin-bottom: 50vh;
 }
+main {
+    background: linear-gradient(to left bottom green red);
+}

@@ -962,11 +962,11 @@
   header {
     position: fixed;
     z-index: 1;
-    background: white;
     top: 0;
     left: 0;
     height: 2em;
     width: 100%;
+    background-color: rgb(150, 150, 148);
   }
   header + main {
     margin-top: 2em;
@@ -974,7 +974,7 @@
   main {
     overflow: auto;
     z-index: 2;
-    background: white;
+    background: linear-gradient(to bottom, rgb(150, 150, 148), #fff);
     position: relative;
   }
   footer {
