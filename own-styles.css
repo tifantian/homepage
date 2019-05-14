@@ -9,7 +9,6 @@
 }
 .bsa-link:hover {
     text-decoration: none;
-    transition: none !important;
 }
 .bsa-link:hover :first-child {
     border-bottom: 2px solid #6fc0dd;
@@ -30,4 +29,72 @@ main, header, footer {
     background: peachpuff linear-gradient(90deg,
     rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4) 50%
     ) center center / 2em;
+}
+
+@keyframes open-page {
+    0% {
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+@keyframes show-avatar {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+body main article .page {
+    animation-name: open-page;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.avatar {
+    animation-name: show-avatar;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;    
+}
+
+.stackable.grid {
+    position: relative;
+}
+/* *************************** */
+.extra-feature {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes wind-power {
+    0% {    
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+#sunflower {
+    animation-name: wind-power;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.85) 160px);
 }

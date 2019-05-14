@@ -29,15 +29,16 @@
         <img src="./assets/images/childhood_photos/childhood_9.JPG" alt="photos9">
       </div>
     </dialog>
-    <header>
-      <div class="credits">
-        Большое спасибо <strong><a class="bsa-link" href="https://study.binary-studio.com" target="_blank"><span class="letter-bsa">Binary</span> <span class="letter-bsa">Studio</span> <span class="letter-bsa">Academy</span></a></strong>
-      </div>
-    </header>
     <main>
       <article>
         <div class="page" style="border-color: rgb(94, 62, 34)">
           <div class="stackable grid">
+            <!-- *** -->
+            <div class="extra-feature">
+              <img id="sunflower" width="150" height="150" src="assets/images/sunflower_release_v1.png" src="few">
+            </div>
+            
+            <!-- *** -->
             <div class="row">
               <div class="three wide center aligned column">
                 <div class="avatar-wrapper">
@@ -301,7 +302,7 @@
                     </li>
                     <li>
                       <div><em>15<sup>е</sup> мая 2012</em></div>
-                      <div><strong>Сертификат</strong> о <strong>достижении 1<sup>го</sup> Юнешеского разряда по шахматам</strong></div>
+                      <div><strong>Сертификат</strong> о <strong>достижении 1<sup>го</sup> Юношеского разряда по шахматам</strong></div>
                     </li>
                     <li>
                       <div><em>1<sup>e</sup> сентября 2004 &mdash; 14<sup>е</sup> июня 2015</em></div>
@@ -333,9 +334,9 @@
       var dayForStudent = getDayName(diffBachelor),
           dayForBirth = getDayName(diffBirth),
           result = '';
-      result += `Живу уже ${diffBirth} ${dayForBirth}` + '<br>';
+      result += `Родился ${diffBirth} ${dayForBirth} назад` + '<br>';
       if(dayForStudent) {
-        result += `Студент КПИ ещё ${diffBachelor} ${dayForStudent}`
+        result += `Студент КПИ, стану бакалавром через ${diffBachelor} ${dayForStudent}`
       } else {
         result += `Поступаю в Binary Studio Academy`;
       }
