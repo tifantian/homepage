@@ -29,15 +29,16 @@
         <img src="./assets/images/childhood_photos/childhood_9.JPG" alt="photos9">
       </div>
     </dialog>
-    <header>
-      <div class="credits">
-        Большое спасибо <strong><a id="bsa-footer" href="https://study.binary-studio.com" target="_blank" rel="external"><span class="footer-bsa">Binary</span> <span class="footer-bsa">Stidio</span> <span class="footer-bsa">Academy</span></a></strong>
-      </div>
-    </header>
     <main>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div class="page" style="border-color: rgb(94, 62, 34)">
           <div class="stackable grid">
+            <!-- *** -->
+            <div class="extra-feature">
+              <img id="sunflower" width="150" height="150" src="assets/images/sunflower_release_v1.png" src="few">
+            </div>
+            
+            <!-- *** -->
             <div class="row">
               <div class="three wide center aligned column">
                 <div class="avatar-wrapper">
@@ -48,7 +49,7 @@
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">Бурмелёв Кирилл</h1>
-                    <div class="job">Студент</div>
+                    <div class="job"></div>
                     <ul class="contacts">
                       <li>
                         <a href="tg:tifantian" rel="author" class="telegram">
@@ -301,7 +302,7 @@
                     </li>
                     <li>
                       <div><em>15<sup>е</sup> мая 2012</em></div>
-                      <div><strong>Сертификат</strong> о <strong>достижении 1<sup>го</sup> Юнешеского разряда по шахматам</strong></div>
+                      <div><strong>Сертификат</strong> о <strong>достижении 1<sup>го</sup> Юношеского разряда по шахматам</strong></div>
                     </li>
                     <li>
                       <div><em>1<sup>e</sup> сентября 2004 &mdash; 14<sup>е</sup> июня 2015</em></div>
@@ -321,8 +322,43 @@
       </article>
     </main>
     <footer>
-      <p><strong><a id="bsa-footer" href="https://study.binary-studio.com" target="_blank" rel="external"><span class="footer-bsa">Binary</span> <span class="footer-bsa">Stidio</span> <span class="footer-bsa">Academy</span></a></strong></p>
+      <p><strong><a class="bsa-link" href="https://study.binary-studio.com" target="_blank"><span class="letter-bsa">Binary</span> <span class="letter-bsa">Studio</span> <span class="letter-bsa">Academy</span></a></strong></p>
     </footer>
-    <!-- <script> -->
+    <script type="text/javascript">
+      var job = document.getElementsByClassName('job')[0],
+          now = new Date(),
+          bachelor = new Date(2019, 5, 16),
+          birth = new Date(1998, 3, 4);
+      var diffBachelor = Math.floor((bachelor - now)/(1000 * 60 * 60 * 24)),
+          diffBirth = Math.floor((now - birth)/(1000 * 60 * 60 * 24));
+      var dayForStudent = getDayName(diffBachelor),
+          dayForBirth = getDayName(diffBirth),
+          result = '';
+      result += `Родился ${diffBirth} ${dayForBirth} назад` + '<br>';
+      if(dayForStudent) {
+        result += `Студент КПИ, стану бакалавром через ${diffBachelor} ${dayForStudent}`
+      } else {
+        result += `Поступаю в Binary Studio Academy`;
+      }
+      function getDayName(remaning) {
+        if(remaning > 0) {
+          var dayName;
+          if(remaning > 4 && remaning < 21) {
+            dayName = 'дней';
+          } else if(remaning == 2 || remaning == 3 || remaning == 4) {
+            dayName = 'дня';
+          } else if(remaning == 1 || (remaning - 1) % 10 == 0) {
+            dayName = 'день';
+          } else if(remaning % 10 == 2 || remaning % 10==3 || remaning % 10==4) {
+            dayName = 'дня';
+          } else {
+            dayName = 'дней';
+          }
+          return dayName;
+        }
+        return 0;
+      }
+      job.innerHTML = result;
+    </script> 
   </body>
 </html>
