@@ -64,3 +64,30 @@ body main article .page {
     animation-fill-mode: forwards;
     animation-timing-function: ease;    
 }
+
+.stackable.grid {
+    position: relative;
+}
+/* *************************** */
+.extra-feature {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes wind-power {
+    0% {    
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+#sunflower {
+    animation-name: wind-power;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
