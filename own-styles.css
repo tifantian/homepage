@@ -1,28 +1,31 @@
-#bsa-footer .footer-bsa:first-child {
+.bsa-link .letter-bsa:first-child {
     color: #ec1848;
-    
 }
-#bsa-footer .footer-bsa:nth-child(2) {
+.bsa-link .letter-bsa:nth-child(2) {
     color: #ffc712;
 }
-#bsa-footer .footer-bsa:last-child {
+.bsa-link .letter-bsa:last-child {
     color: #00adee;
 }
-#bsa-footer:hover {
+.bsa-link:hover {
     text-decoration: none;
+    transition: none !important;
 }
-#bsa-footer:hover :first-child {
+.bsa-link:hover :first-child {
     border-bottom: 2px solid #6fc0dd;
     border-top: 2px solid #6fc0dd;
 }
-#bsa-footer:hover :nth-child(2) {
+.bsa-link:hover :nth-child(2) {
     border-bottom: 2px solid #ec5f80;
     border-top: 2px solid #ec5f80;
 }
-#bsa-footer:hover :last-child {
+.bsa-link:hover :last-child {
     border-bottom: 2px solid #ebca60;
     border-top: 2px solid #ebca60;
 } 
 main:nth-last-child(2){
     margin-bottom: 50vh;
+}
+main {
+    background: linear-gradient(to left bottom green red);
 }
