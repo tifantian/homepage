@@ -23,6 +23,6 @@
     border-bottom: 2px solid #ebca60;
     border-top: 2px solid #ebca60;
 } 
-main {
+main:nth-last-child(2){
     margin-bottom: 50vh;
 }
