@@ -31,3 +31,36 @@ main, header, footer {
     rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4) 50%
     ) center center / 2em;
 }
+
+@keyframes open-page {
+    0% {
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+@keyframes show-avatar {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+body main article .page {
+    animation-name: open-page;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.avatar {
+    animation-name: show-avatar;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;    
+}
