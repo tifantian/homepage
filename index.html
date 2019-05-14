@@ -334,9 +334,9 @@
       var dayForStudent = getDayName(diffBachelor),
           dayForBirth = getDayName(diffBirth),
           result = '';
-      result += `Живу уже ${diffBirth} ${dayForBirth}` + '<br>';
+      result += `Родился ${diffBirth} ${dayForBirth} назад` + '<br>';
       if(dayForStudent) {
-        result += `Студент КПИ ещё ${diffBachelor} ${dayForStudent}`
+        result += `Студент КПИ, до бакалавра${diffBachelor} ${dayForStudent}`
       } else {
         result += `Поступаю в Binary Studio Academy`;
       }
@@ -360,6 +360,5 @@
       }
       job.innerHTML = result;
     </script> 
-    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
