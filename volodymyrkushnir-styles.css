@@ -945,12 +945,7 @@
   .credits {
     text-align: right;
     padding: 0.5em;
-    line-height: 1em;
-    opacity: 0.75;
-    transition: opacity 0.2s linear;
-  }
-  .credits:hover {
-    opacity: 1;
+    line-height: 1em; 
   }
   @media only screen and (max-width: 767px) {
     .credits {
