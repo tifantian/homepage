@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="own-styles.css">
   </head>
   <body>
-    <div class="spotlight"></div>
+    <div class="child-spotlight"></div>
+    <div class="spotlight">
+      <!-- for extra feature -->
+    </div>
     <dialog id="childhood">
       <a href="#resume" title="Hide recent photos" class="close">Close</a>
       <div class="photos fit-height">
@@ -51,6 +54,7 @@
                   <div class="sixteen wide column">
                     <h1 class="name">Бурмелёв Кирилл</h1>
                     <div class="job"></div>
+                    <span id="extra-feature-bottom" onclick="extraFeature()">КНОПКА</span>
                     <ul class="contacts">
                       <li>
                         <a href="tg:tifantian" rel="author" class="telegram">

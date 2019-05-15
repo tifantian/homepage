@@ -34,10 +34,10 @@ main, header, footer {
 @keyframes open-page {
     0% {
         opacity: 0;
-        transform: translateY(-10vh);
+        transform: translateY(-50px);
     }
     100% {
-        transform: translateY(0vh);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -84,6 +84,22 @@ body main article .page {
         transform: rotate(360deg); 
     }
 }
+@keyframes wind-power-racing {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes wind-power-racing-on {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 #sunflower {
     animation-name: wind-power;
     animation-duration: 4s;
@@ -91,11 +107,22 @@ body main article .page {
     animation-iteration-count: infinite;
 }
 .spotlight {
+    display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.85) 160px);
-	z-index: 200;
+	background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 1) 160px);
+    z-index: 5;
+    /* animation-name: wind-power-racing; */
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.child-spotlight {
+    display: none;
+    z-index: 6;
+}
+#extra-feature-bottom {
+    background-color: red;
 }
