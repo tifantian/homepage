@@ -90,11 +90,3 @@ body main article .page {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.spotlight {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.85) 160px);
-}
