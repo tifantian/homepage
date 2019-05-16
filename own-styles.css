@@ -123,17 +123,7 @@ body main article .page {
     display: none;
     z-index: 6;
 }
-/* #extra-feature-bottom {
-    background-color: red;
-    border: 1px solid crimson;
-    padding: 2px 5px;
-    background-color: rgb(224, 226, 66);
-    color: red;
-    border-radius: 5px;
-    cursor: pointer;
-} */
 
-/* html5book */
 #extra-feature-bottom {
   padding: 2px 5px;
   border-radius: 10px;
