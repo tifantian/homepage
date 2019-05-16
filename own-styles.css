@@ -22,7 +22,7 @@
     border-bottom: 2px solid #ebca60;
     border-top: 2px solid #ebca60;
 } 
-main:nth-last-child(3){
+main:nth-last-child(4){
     margin-bottom: 50vh;
 }
 main, header, footer {
