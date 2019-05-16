@@ -22,7 +22,7 @@
     border-bottom: 2px solid #ebca60;
     border-top: 2px solid #ebca60;
 } 
-main:nth-last-child(3){
+main:nth-last-child(4){
     margin-bottom: 50vh;
 }
 main, header, footer {
@@ -34,10 +34,10 @@ main, header, footer {
 @keyframes open-page {
     0% {
         opacity: 0;
-        transform: translateY(-10vh);
+        transform: translateY(-50px);
     }
     100% {
-        transform: translateY(0vh);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -84,6 +84,22 @@ body main article .page {
         transform: rotate(360deg); 
     }
 }
+@keyframes wind-power-racing {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes wind-power-racing-on {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 #sunflower {
     animation-name: wind-power;
     animation-duration: 4s;
@@ -91,10 +107,46 @@ body main article .page {
     animation-iteration-count: infinite;
 }
 .spotlight {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.85) 160px);
+    display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 1) 160px);
+    z-index: 5;
+    /* animation-name: wind-power-racing; */
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.child-spotlight {
+    display: none;
+    z-index: 6;
+}
+/* #extra-feature-bottom {
+    background-color: red;
+    border: 1px solid crimson;
+    padding: 2px 5px;
+    background-color: rgb(224, 226, 66);
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* html5book */
+#extra-feature-bottom {
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white;
+  box-shadow: 0 3px 5px 0 rgba(0,40,120,.35);
+  transition: .5s;
+  cursor: pointer;
+  text-align: center !important;
+}
+#extra-feature-bottom:hover {
+  box-shadow: 0 0 0 0 rgba(0,40,120,0);
+  background-position: 0 0;
 }

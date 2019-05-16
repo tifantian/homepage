@@ -1,8 +1,8 @@
 ::-moz-selection {
-    background: yellow;
+    background: #f3b9b9;
   }
   ::selection {
-    background: yellow;
+    background: #f3b9b9;
   }
   *,
   *:before,
@@ -141,13 +141,14 @@
     margin-top: calc(0.4285rem / 2);
   }
   a {
-    color: blue;
+    color: rgb(11, 146, 135);
     background-color: transparent;
     text-decoration: none;
   }
   a[rel="external"]:not(.label):hover,
   a.language:hover span {
     text-decoration: underline;
+    color: rgb(15, 113, 158);
   }
   
   /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
