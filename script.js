@@ -51,6 +51,7 @@ function updateSpotlight(e,event) {
 element.addEventListener('click', function() {
     sunflower.style.animationName = 'wind-power';
     spotlight.style.animationName = 'wind-power-racing';
+    document.getElementById('extra-feature-bottom').innerHTML = 'А лучше бы боялся :)';
     setTimeout(function() {
         spotlight.style.display = 'none';   
         document.body.style.cursor = '';
@@ -68,6 +69,7 @@ function extraFeature() {
         spotlightSize = "transparent 80px, rgba(0, 0, 0, 1) 110px)";
         sunflower.style.animationName = 'none';
         childSpotLight.style.display = 'block';
+        document.getElementById('extra-feature-bottom').innerHTML = 'Подсолнух :)';
     }, 2000);
 }
 

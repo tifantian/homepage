@@ -53,8 +53,11 @@
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">Бурмелёв Кирилл</h1>
-                    <div class="job"></div>
-                    <span id="extra-feature-bottom" onclick="extraFeature()">КНОПКА</span>
+                    <div class="job">
+                        
+                    </div>
+                    
+
                     <ul class="contacts">
                       <li>
                         <a href="tg:tifantian" rel="author" class="telegram">
@@ -363,7 +366,7 @@
         }
         return 0;
       }
-      job.innerHTML = result;
+      job.innerHTML = result + `<br><br><span id="extra-feature-bottom" onclick="extraFeature()">Ты боишься темноты?</span>`;
     </script> 
     <script type="text/javascript" src="script.js"></script>
   </body>
