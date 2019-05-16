@@ -22,7 +22,7 @@ element.style.cssText = `width: ${position.width}px; height: ${position.height}p
 
 
 const spotlight = document.querySelector(".spotlight");
-spotlight.style.height = 100 + scrollHeight + 'px';
+spotlight.style.height = scrollHeight + 'px';
 let spotlightSize = "transparent 0px, rgba(0, 0, 0, 1) 0px)";
 
 window.addEventListener("mousemove", e => {
