@@ -15,7 +15,6 @@ const cach = {
 
 let extra = document.getElementsByClassName('extra-feature')[0];
 let position = extra.getBoundingClientRect();
-console.log(position)
 let element = document.getElementsByClassName('child-spotlight')[0];
 let posTop = position.top + 50,
     posLeft = position.left + 14;

@@ -348,23 +348,40 @@
       } else {
         result += `Поступаю в Binary Studio Academy`;
       }
+
+      // let test = []; // YOU CAN TEST THIS SCRIPT... I tried to do it better...
+      //   for(var i = 0; i < 3000; i++) {
+      //     test[i] = getDayName(i);
+      // }
+      // console.log(test);
+
+
       function getDayName(remaning) {
-        if(remaning > 0) {
-          var dayName;
-          if(remaning > 4 && remaning < 21) {
-            dayName = 'дней';
-          } else if(remaning == 2 || remaning == 3 || remaning == 4) {
-            dayName = 'дня';
-          } else if(remaning == 1 || (remaning - 1) % 10 == 0) {
-            dayName = 'день';
-          } else if(remaning % 10 == 2 || remaning % 10==3 || remaning % 10==4) {
-            dayName = 'дня';
-          } else {
-            dayName = 'дней';
+        remaning = String(remaning);
+        let a = remaning.split('').map((e)=>+e);
+        console.log(a);
+        let str = '';
+        if(a.length >= 2) {
+          if(a[a.length - 2] == 1 || a[a.length - 1] == 0) {
+            return 'дней';
           }
-          return dayName;
+          if(a[a.length - 1] == 2 || a[a.length - 1] == 3 || a[a.length - 1] == 4) {
+            return 'дня';
+          }
+          if(a[a.length - 1] == 1) {
+            return 'день';
+          }   
+          if(a[a.length - 2] == 0) {
+            return 'дней';
+          }
         }
-        return 0;
+        if(a[a.length - 1] == 2 || a[a.length - 1] == 3 || a[a.length - 1] == 4) {
+          return 'дня';
+        }
+        if(a[a.length - 1] == 1) {
+          return 'день';
+        }
+        return 'дней';
       }
       job.innerHTML = result + `<br><br><span id="extra-feature-bottom" onclick="extraFeature()">Ты боишься темноты?</span>`;
     </script> 
