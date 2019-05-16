@@ -21,10 +21,8 @@ let posTop = position.top + 50,
 element.style.cssText = `width: ${position.width}px; height: ${position.height}px; position: absolute; top: ${posTop}px; left: ${posLeft}px`;
 
 
-let isFirst = true;
-let speed = 20;
 const spotlight = document.querySelector(".spotlight");
-spotlight.style.height = 100 + scrollHeight + 'px';
+spotlight.style.height = scrollHeight + 'px';
 let spotlightSize = "transparent 0px, rgba(0, 0, 0, 1) 0px)";
 
 window.addEventListener("mousemove", e => {
