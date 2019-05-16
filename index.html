@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -39,7 +39,7 @@
           <div class="stackable grid">
             <!-- *** -->
             <div class="extra-feature">
-              <img id="sunflower" width="150" height="150" src="assets/images/sunflower_release_v1.png" src="few">
+              <img id="sunflower" width="150" height="150" src="assets/images/sunflower_release_v1.png">
             </div>
             
             <!-- *** -->
@@ -332,7 +332,7 @@
     <footer>
       <p><strong><a class="bsa-link" href="https://study.binary-studio.com" target="_blank"><span class="letter-bsa">Binary</span> <span class="letter-bsa">Studio</span> <span class="letter-bsa">Academy</span></a></strong></p>
     </footer>
-    <script type="text/javascript">
+    <script>
       var job = document.getElementsByClassName('job')[0],
           now = new Date(),
           bachelor = new Date(2019, 5, 16),
@@ -359,7 +359,7 @@
       function getDayName(remaning) {
         remaning = String(remaning);
         let a = remaning.split('').map((e)=>+e);
-        console.log(a);
+        // console.log(a);
         let str = '';
         if(a.length >= 2) {
           if(a[a.length - 2] == 1 || a[a.length - 1] == 0) {
@@ -385,6 +385,6 @@
       }
       job.innerHTML = result + `<br><br><span id="extra-feature-bottom" onclick="extraFeature()">Ты боишься темноты?</span>`;
     </script> 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
